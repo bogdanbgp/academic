@@ -1,0 +1,21 @@
+.notfound-container {
+  padding: 25px;
+  font-family: 'Garamond', serif;
+  background-color: #2b2d3c; /* Slightly lighter dark color */
+  color: #e0e0e0; /* Soft light text color */
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9); /* Deeper shadow for added depth */
+  text-align: center;
+}
+
+.notfound-container h1 {
+  font-size: 3em;
+  color: #ff6f6f; /* Misty red for error */
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Enhanced text shadow for error effect */
+}
+
+.notfound-container p {
+  font-size: 1.2em;
+}

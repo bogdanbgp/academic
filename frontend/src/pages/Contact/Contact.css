@@ -1,0 +1,39 @@
+.contact-container {
+  padding: 25px;
+  font-family: 'Garamond', serif;
+  background-color: #1a1a2e; /* Dark background color to match About page */
+  color: #e0e0e0; /* Light text color */
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9); /* Deeper shadow for added depth */
+}
+
+.contact-container h1 {
+  font-size: 2.8em;
+  color: #dcdcdc;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Enhanced text shadow for a glowing effect */
+  margin-bottom: 25px;
+}
+
+.contact-container p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.contact-container address {
+  background-color: #1f2029; /* Darker background for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  font-size: 1.1em;
+}
+
+.contact-container address a {
+  color: #6a0f6e; /* Mystical dark purple */
+  text-decoration: none;
+}
+
+.contact-container address a:hover {
+  text-decoration: underline;
+}

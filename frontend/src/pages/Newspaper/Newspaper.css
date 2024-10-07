@@ -1,0 +1,58 @@
+/* src/pages/Newspaper.css */
+.newspaper-container {
+  padding: 40px;
+  font-family: 'Garamond', serif;
+  background-color: #2a2a3c; /* Dark background color */
+  color: #e0e0e0; /* Light text color */
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.newspaper-header h1 {
+  font-size: 2.8em;
+  color: white; /* Mystical purple */
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #bb86fc, 0 0 20px #bb86fc; /* Glowing effect */
+  letter-spacing: 1px;
+}
+
+.newspaper-header p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.newspaper-header p {
+  font-size: 1.5em;
+  color: #e0e0e0; /* Soft white for readability */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle glow */
+  margin-top: 15px;
+}
+
+.news-article {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #1a1a2e; /* Darker background for articles */
+  border-radius: 8px;
+}
+
+.news-headline {
+  font-size: 2em;
+  color: #f0f0f0; /* Light color for headlines */
+  margin-bottom: 10px;
+}
+
+.news-content {
+  font-size: 1.2em;
+  color: #ccc; /* Light color for content */
+}
+
+.news-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

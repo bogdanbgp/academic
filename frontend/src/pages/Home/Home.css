@@ -1,0 +1,188 @@
+/* Existing styles */
+
+.home-container {
+  padding: 40px;
+  font-family: 'Garamond', serif;
+  background-color: #2a2a3c; /* Dark background color */
+  color: #e0e0e0; /* Light text color */
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Mystical and Dark Styles for Welcome Message */
+.home-header {
+  text-align: center;
+  margin-bottom: 40px;
+  background: radial-gradient(circle, rgba(0,0,0,0.8), rgba(40,40,60,1)); /* Dark gradient */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Strong shadow for depth */
+}
+
+.home-header h1 {
+  font-size: 4em;
+  color: #bb86fc; /* Mystical soft purple glow */
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #bb86fc, 0 0 20px #bb86fc; /* Glowing text effect */
+  letter-spacing: 2px; /* Slightly spaced letters for a magical feel */
+}
+
+.home-header p {
+  font-size: 1.5em;
+  color: #e0e0e0; /* Soft white for readability */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle glow */
+  margin-top: 15px;
+}
+
+/* Breaking News Section */
+.home-news h2,
+.home-notable h2,
+.home-colors h2 {
+  font-size: 2.8em;
+  color: white; /* Mystical purple */
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #bb86fc, 0 0 20px #bb86fc; /* Glowing effect */
+  letter-spacing: 1px;
+}
+
+
+.news-article {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #1a1a2e; /* Darker background for articles */
+  border-radius: 8px;
+}
+
+.news-headline {
+  font-size: 2em;
+  color: #f0f0f0; /* Light color for headlines */
+  margin-bottom: 10px;
+}
+
+.news-content {
+  font-size: 1.2em;
+  color: #ccc; /* Light color for content */
+}
+
+.news-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.view-newspaper-button {
+  background-color: #6a0dad; /* Deep purple */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6); /* Shadow for effect */
+  margin-top: 20px;
+}
+
+.view-newspaper-button:hover {
+  background-color: #4c0099; /* Darker purple on hover */
+}
+
+.home-notable, .home-tips, .home-updates {
+  margin-top: 40px;
+}
+
+.notables-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.notable-item {
+  width: 45%;
+  background-color: #1a1a2e; /* Darker background for notable items */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.home-colors {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 12px;
+  color: #e0e0e0;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.home-colors h2 {
+  font-size: 2.5em;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.home-colors p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.color-options button {
+  background-color: #6a0dad;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.color-options button:nth-child(2) {
+  background-color: #d32f2f;
+}
+
+.color-options button:nth-child(3) {
+  background-color: #1976d2;
+}
+
+.color-options button:nth-child(4) {
+  background-color: #388e3c;
+}
+
+.color-options button:hover {
+  background-color: #4c0099;
+  transform: scale(1.05);
+}
+
+/* Centering the Admin Access section */
+.home-admin {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.home-admin h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.home-admin button {
+  background-color: #6a0dad; /* Deep purple */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6); /* Shadow for effect */
+  margin-top: 10px; /* Reduced margin to align closer */
+}
+
+.home-admin button:hover {
+  background-color: #4c0099; /* Darker purple on hover */
+}

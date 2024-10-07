@@ -1,0 +1,95 @@
+body {
+  background-color: #2a2a3c;
+}
+
+.grades-container {
+  padding: 20px;
+  background: linear-gradient(145deg, #0d0d1d, #1a1a2e); /* Gradient for depth */
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Deep shadow for mystical effect */
+  border: 1px solid #333; /* Dark border for a more mystical edge */
+}
+
+.grades-form {
+  margin-bottom: 20px;
+}
+
+.grades-form .form-group {
+  margin-bottom: 15px;
+}
+
+.grades-form label {
+  display: block;
+  color: #e0e0e0;
+  margin-bottom: 5px;
+}
+
+.grades-form input[type="text"],
+.grades-form select {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #6a0dad;
+  border-radius: 5px;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+.grades-form button {
+  background-color: #6a0dad; /* Deep purple */
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.grades-form button:hover {
+  background-color: #4c0099; /* Darker purple on hover */
+  transform: scale(1.05);
+}
+
+.grade-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.grade-list li {
+  margin: 10px 0;
+  background-color: #1a1a2e; /* Darker background for list items */
+  padding: 10px;
+  border-radius: 5px;
+  color: #e0e0e0;
+  border: 1px solid #333; /* Dark border to differentiate from form elements */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+  display: flex;
+  justify-content: space-between; /* Space between grade info and delete button */
+  align-items: center; /* Center align items vertically */
+  transition: transform 0.2s; /* Slight hover effect for the list items */
+}
+
+.grade-list li:hover {
+  transform: scale(1.02); /* Slight zoom on hover for list items */
+}
+
+.delete-grade-button {
+  background-color: #6a0dad; /* Deep purple for the delete button */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.delete-grade-button:hover {
+  background-color: #4c0099; /* Darker purple on hover */
+  transform: scale(1.05);
+}

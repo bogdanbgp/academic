@@ -1,0 +1,25 @@
+.about-container {
+  padding: 20px;
+  background-color: #1a1a2e; /* Dark background color */
+  color: #e0e0e0; /* Light text color */
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.about-container h1 {
+  font-size: 2.8em;
+  color: #dcdcdc;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Enhanced text shadow for glow effect */
+  margin-bottom: 25px;
+}
+
+.about-container p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.about-container strong {
+  color: #6a0f6e; /* Mystical dark purple */
+}

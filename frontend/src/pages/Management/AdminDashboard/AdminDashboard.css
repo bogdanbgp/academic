@@ -1,0 +1,47 @@
+body {
+  background-color: #2a2a3c;
+}
+
+.admin-dashboard {
+  padding: 20px;
+  background: linear-gradient(145deg, #0d0d1d, #1a1a2e); /* Gradient for depth */
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Deep shadow for mystical effect */
+  border: 1px solid #333; /* Dark border for a more mystical edge */
+  text-align: center;
+}
+
+.admin-dashboard h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.admin-dashboard li {
+  margin: 10px 0;
+}
+
+.admin-dashboard a {
+  display: inline-block; /* Make the link appear as a block element */
+  background-color: #6a0dad; /* Deep purple background for the button effect */
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 12px 24px; /* Add padding for a button-like appearance */
+  font-size: 1.2em;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6); /* Shadow for button effect */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+.admin-dashboard a:hover {
+  background-color: #4c0099; /* Darker purple for hover effect */
+  text-decoration: none; /* Keep the text decoration unchanged on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}

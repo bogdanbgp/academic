@@ -1,0 +1,44 @@
+/* Navbar container styling */
+.navbar {
+  background-color: #2a2a2a; /* Dark, almost black background for a mystical feel */
+  color: #f4f4f4; /* Light text color */
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Navbar links container styling */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual link styling */
+.navbar-links li {
+  margin: 0 15px;
+}
+
+/* Link styling */
+.navbar-links a {
+  color: #e0e0e0; /* Light text color for links */
+  text-decoration: none;
+  font-size: 1.1em;
+  font-family: 'Garamond', serif; /* Fantasy-style font */
+  position: relative;
+  transition: color 0.3s, text-shadow 0.3s; /* Smooth transitions for hover effects */
+}
+
+/* Link hover effects */
+.navbar-links a:hover {
+  color: #9b59b6; /* Mystic purple */
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* Glowing text effect */
+}
+
+/* Link active or focused effects */
+.navbar-links a:active,
+.navbar-links a:focus {
+  color: #8e44ad; /* Slightly darker purple */
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
