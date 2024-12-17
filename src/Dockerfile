@@ -1,32 +1,29 @@
-# Use the official Maven image for building Java projects
-FROM maven:3.8.4-openjdk-11-slim as builder
+# Use an official Maven image to build the application
+FROM maven:3.8.4-openjdk-11-slim AS builder
 
-# Set the working directory in the container
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy the pom.xml and other necessary files to build dependencies
+# Copy the pom.xml file from the root folder (where it is located) into the container's working directory
 COPY pom.xml .
 
-# Download the dependencies without copying the whole project
-RUN mvn dependency:go-offline
-
-# Copy the project files
+# Copy the src directory (which contains the Java source code) into the container's /app/src directory
 COPY src /app/src
 
-# Build the project
-RUN mvn clean package -DskipTests
+# Run Maven to build the project (offline mode to avoid network dependencies)
+RUN mvn dependency:go-offline
 
-# Create the final image based on OpenJDK image
+# Stage 2: Build the runtime image
 FROM openjdk:11-jre-slim
 
-# Set the working directory for the runtime
+# Set the working directory inside the runtime container
 WORKDIR /app
 
-# Copy the JAR file from the builder stage
-COPY --from=builder /app/target/your-jar-file.jar /app/app.jar
+# Copy the built JAR file from the builder stage
+COPY --from=builder /app/target/*.jar /app/app.jar
 
-# Expose the port that the application will run on
+# Expose the application port (assuming it's 8080)
 EXPOSE 8080
 
-# Run the Java application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Run the JAR file
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
