@@ -4,11 +4,11 @@ FROM maven:3.8.4-openjdk-11-slim AS builder
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the pom.xml file from the root folder (where it is located) into the container's working directory
-COPY pom.xml .
+# Copy the pom.xml file from the root folder (one level up from src)
+COPY ../pom.xml .
 
-# Copy the src directory (which contains the Java source code) into the container's /app/src directory
-COPY src /app/src
+# Copy the src directory (which contains the Java source code) from the root folder
+COPY ../src /app/src
 
 # Run Maven to build the project (offline mode to avoid network dependencies)
 RUN mvn dependency:go-offline
