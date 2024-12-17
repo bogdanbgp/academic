@@ -1,0 +1,16 @@
+# Exclude the .git folder to avoid copying version control metadata
+.git/
+
+# Exclude target directory where Maven stores build output
+target/
+
+# Exclude IDE specific files/folders (e.g., IntelliJ, VSCode)
+.idea/
+.vscode/
+
+# Exclude OS-specific files (e.g., macOS or Windows system files)
+.DS_Store
+Thumbs.db
+
+# Exclude Maven wrapper and other unnecessary files
+.mvn/
