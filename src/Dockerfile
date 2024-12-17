@@ -4,7 +4,7 @@ FROM maven:3.8.4-openjdk-11-slim AS builder
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the pom.xml file from the root folder (one level up from src)
+# Copy the pom.xml file from the root folder (since Dockerfile is in /src)
 COPY ../pom.xml .
 
 # Copy the src directory (which contains the Java source code) from the root folder
