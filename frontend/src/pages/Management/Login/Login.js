@@ -42,6 +42,11 @@ function Login() {
         <button type="submit">Login</button>
         {error && <p className="error-message">{error}</p>}
       </form>
+
+      {/* Display login credentials to the user */}
+      <p className="login-credentials">
+        Default Login Credentials: <strong>Username: admin, Password: pass</strong>
+      </p>
     </div>
   );
 }
