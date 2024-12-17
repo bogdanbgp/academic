@@ -1,0 +1,8 @@
+# Ignore Maven target folder (this is where the built artifacts are placed)
+target/
+
+# Ignore the .git folder (this is the git version control data)
+.git/
+
+# Ignore the .DS_Store files (these are macOS system files that are not needed)
+.DS_Store
