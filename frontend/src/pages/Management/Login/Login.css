@@ -56,15 +56,3 @@ body {
   color: #ff4c4c;
   margin-top: 10px;
 }
-
-/* Styling for the login credentials message */
-.login-credentials {
-  margin-top: 20px;
-  font-size: 1em;
-  color: #b0b0b0; /* Lighter gray color */
-  text-align: center;
-}
-
-.login-credentials strong {
-  color: #fff; /* White color for the credentials */
-}

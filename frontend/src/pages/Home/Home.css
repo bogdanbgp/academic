@@ -68,12 +68,39 @@
 }
 
 .news-image {
-  max-width: 100%;
-  height: auto;
+  max-width: 50%; /* Reduce image size to 50% of parent width */
+  height: auto; /* Maintain aspect ratio */
   border-radius: 4px;
   margin-top: 10px;
   margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover; /* Ensure the image fits the container while maintaining its aspect ratio */
 }
+
+.read-more-button {
+  background-color: #6a0dad; /* Deep purple background */
+  color: white; /* Text color */
+  border: none;
+  padding: 12px 24px; /* Add some padding for better spacing */
+  font-size: 1.2em; /* Larger text for readability */
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for background color and transform */
+  margin-top: 10px;
+}
+
+.read-more-button:hover {
+  background-color: #4c0099; /* Darker purple when hovered */
+  transform: scale(1.05); /* Slight scale effect to emphasize the button */
+}
+
+.read-more-button:active {
+  transform: scale(1); /* Reset scale when the button is pressed */
+}
+
 
 .view-newspaper-button {
   background-color: #6a0dad; /* Deep purple */
