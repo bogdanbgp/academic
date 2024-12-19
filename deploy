@@ -1,0 +1,19 @@
+For the Academic Project:
+
+Build the React Frontend (Manually):
+Open a terminal and navigate to your frontend directory (where the package.json is located):
+cd /path/to/your/academic-project/frontend
+Run the React build command:
+npm run build
+This will create a production-ready build in the build/ folder. The contents of this folder (including index.html, JavaScript, CSS files, etc.) should be moved into the Spring Boot project’s static folder.
+Copy the Build Files into the Spring Boot Project:
+After running npm run build, copy the contents of the frontend/build folder into src/main/resources/static in your Spring Boot project.
+cp -r /path/to/your/academic-project/frontend/build/* /path/to/your/academic-project/src/main/resources/static/
+Build the Spring Boot Project:
+Now, go to the root directory of your Spring Boot project (where pom.xml is located) and run the following command:
+mvn clean install
+This will clean, install, and build your Spring Boot application along with the static frontend files included.
+Run the Application:
+After the build is complete, run the following command to start your Spring Boot application:
+java -jar target/academic-0.0.1-SNAPSHOT.jar
+This will start the backend on localhost:8080, and React will handle the frontend.
